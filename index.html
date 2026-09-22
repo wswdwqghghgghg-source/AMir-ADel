@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>رنا أسامة الصردي | ملف الموارد البشرية وإدارة المواهب | HR Specialist Portfolio</title>
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Rana Osama | HR Specialist & Talent Management Portfolio">
+  <meta name="description" content="Official Portfolio of Rana Osama - HR Specialist, Accounting & Finance student at Tanta University. Practical expertise in Recruitment, Labor Law No. 14 of 2025, Talent Management, Personnel & Payroll.">
+  <meta name="keywords" content="Rana Osama, HR, Human Resources, Recruitment, Talent Management, Personnel, Payroll, Tanta University, UCCD, Creativa, Portfolio, رنا أسامة الصردي">
+  <meta name="author" content="Rana Osama">
+
+  <!-- Google Fonts: Cairo (Arabic) & Plus Jakarta Sans (English) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Master Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Scroll Reading Progress -->
+  <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+
+  <!-- Dynamic Ambient Background (Canvas Particles + Gradient Mesh + Grid) -->
+  <canvas id="ambientCanvas" class="ambient-canvas" aria-hidden="true"></canvas>
+  <div class="bg-mesh" aria-hidden="true">
+    <div class="mesh-blob blob-1"></div>
+    <div class="mesh-blob blob-2"></div>
+    <div class="mesh-blob blob-3"></div>
+    <div class="mesh-blob blob-4"></div>
+    <div class="mesh-grid-pattern"></div>
+    <div class="mesh-noise-overlay"></div>
+  </div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="Rana Osama Portfolio">
+        <span class="logo-badge">RO</span>
+        <span class="logo-text">
+          <span class="logo-name">RANA OSAMA</span>
+          <span class="logo-sub" data-i18n="nav.logoSub">HR SPECIALIST</span>
+        </span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link" data-i18n="nav.about">عنّي</a></li>
+          <li class="nav-item"><a href="#competencies" class="nav-link" data-i18n="nav.competencies">المهارات والكفاءات</a></li>
+          <li class="nav-item"><a href="#workshops" class="nav-link" data-i18n="nav.workshops">ورش العمل والتطوير</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link" data-i18n="nav.experience">الخبرة التدريبية</a></li>
+          <li class="nav-item"><a href="#volunteering" class="nav-link" data-i18n="nav.volunteering">الخبرات التطوعية</a></li>
+          <li class="nav-item"><a href="#courses" class="nav-link" data-i18n="nav.courses">الشهادات والبرامج</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link" data-i18n="nav.contact">تواصل معي</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Controls (Language & Theme) -->
+      <div class="nav-actions">
+        <!-- Language Switcher -->
+        <button class="action-btn lang-toggle" id="langToggle" aria-label="Toggle Language" title="English / العربية">
+          <i class="fa-solid fa-globe"></i>
+          <span class="lang-text" id="langLabel">English</span>
+        </button>
+
+        <!-- Theme Switcher -->
+        <button class="action-btn theme-toggle" id="themeToggle" aria-label="Toggle Theme" title="تبديل المظهر">
+          <i class="fa-solid fa-sun icon-sun"></i>
+          <i class="fa-solid fa-moon icon-moon"></i>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="action-btn mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <!-- Hero Text & Content -->
+        <div class="hero-content">
+          <div class="hero-status-pill">
+            <span class="status-pulse"></span>
+            <span class="status-text" data-i18n="hero.badge">جاهزة لفرص الموارد البشرية وإدارة المواهب</span>
+          </div>
+          
+          <h1 class="hero-title">
+            <span class="hero-greeting" data-i18n="hero.greeting">مرحبًا، أنا</span>
+            <span class="hero-name-gradient" data-i18n="hero.name">رنا أسامة الصردي</span>
+          </h1>
+
+          <p class="hero-role-lead" data-i18n="hero.subtitle">
+            طالبة بالفرقة الرابعة، كلية التجارة - برنامج المحاسبة والمالية بجامعة طنطا | شغوفة بمجال الموارد البشرية، التوظيف وإدارة المواهب
+          </p>
+
+          <p class="hero-bio-brief" data-i18n="hero.shortSummary">
+            طالبة طموحة ومتميزة بخبرة تطبيقية وميدانية في التوظيف والاختيار (Recruitment & Selection)، شؤون الموظفين (Personnel)، وأساسيات الرواتب (Payroll)، مع إلمام بقانون العمل رقم 14 لسنة 2025 وقيادة الفرق بكفاءة.
+          </p>
+
+          <!-- Call to Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#workshops" class="btn btn-primary">
+              <i class="fa-solid fa-images"></i>
+              <span data-i18n="hero.ctaWorkshops">استعراض ورش العمل والمشاركات</span>
+            </a>
+            <a href="#courses" class="btn btn-secondary">
+              <i class="fa-solid fa-award"></i>
+              <span data-i18n="hero.ctaCertificates">معاينة الشهادات المعتمدة (9 شهادات)</span>
+            </a>
+            <a href="https://www.linkedin.com/in/rana-osama-elsorady-b3a39b318?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="btn btn-linkedin">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+
+          <!-- Highlight Key Metrics Counters -->
+          <div class="hero-metrics-bar">
+            <div class="metric-card">
+              <div class="metric-icon-box">
+                <i class="fa-solid fa-users-gear"></i>
+              </div>
+              <div class="metric-details">
+                <span class="metric-number" data-target="90">0</span><span class="metric-plus">+ hrs</span>
+                <span class="metric-title" data-i18n="metrics.hrTitle">الموارد البشرية</span>
+                <span class="metric-desc" data-i18n="metrics.hrDesc">تدريب معتمد وتوظيف</span>
+              </div>
+            </div>
+
+            <div class="metric-divider"></div>
+
+            <div class="metric-card">
+              <div class="metric-icon-box">
+                <i class="fa-solid fa-building-columns"></i>
+              </div>
+              <div class="metric-details">
+                <span class="metric-number" data-target="4">0</span><span class="metric-plus">th Year</span>
+                <span class="metric-title" data-i18n="metrics.eduTitle">جامعة طنطا</span>
+                <span class="metric-desc" data-i18n="metrics.eduDesc">المحاسبة والمالية</span>
+              </div>
+            </div>
+
+            <div class="metric-divider"></div>
+
+            <div class="metric-card">
+              <div class="metric-icon-box">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div class="metric-details">
+                <span class="metric-number" data-target="9">0</span><span class="metric-plus"> Verified</span>
+                <span class="metric-title" data-i18n="metrics.leadTitle">شهادات وخطابات رسمية</span>
+                <span class="metric-desc" data-i18n="metrics.leadDesc">مؤسسات جامعية وحكومية</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase (Pure Executive HR Animated Emblem) -->
+        <div class="hero-visual">
+          <div class="portrait-stage">
+            
+            <!-- Ambient Glowing Lighting Behind Logo -->
+            <div class="ambient-glow glow-cyan"></div>
+            <div class="ambient-glow glow-indigo"></div>
+            <div class="ambient-glow glow-gold"></div>
+
+            <!-- Luxury Glassmorphic HR Showcase Card -->
+            <div class="portrait-card hr-showcase-card" data-tilt>
+              <div class="portrait-header-bar">
+                <div class="header-status-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <div class="header-live-indicator">
+                  <span class="live-pulse-dot"></span>
+                </div>
+              </div>
+
+              <!-- Pure Dynamic HR Master Emblem Stage -->
+              <div class="hr-emblem-stage">
+                <!-- Background Multi-layer Animated Glow & Orbits -->
+                <div class="hr-glow-core"></div>
+                <div class="hr-orbit-ring hr-orbit-outer"></div>
+                <div class="hr-orbit-ring hr-orbit-middle"></div>
+                <div class="hr-orbit-ring hr-orbit-inner"></div>
+
+                <!-- Orbiting Pure Energy Particles (No Text) -->
+                <div class="hr-energy-orb orb-1"></div>
+                <div class="hr-energy-orb orb-2"></div>
+                <div class="hr-energy-orb orb-3"></div>
+                <div class="hr-energy-orb orb-4"></div>
+
+                <!-- Central Master HR Insignia (Vector SVG with Motion) -->
+                <div class="hr-master-logo">
+                  <svg class="hr-svg-logo" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <linearGradient id="hrGradPrimary" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#38bdf8" />
+                        <stop offset="45%" stop-color="#2563eb" />
+                        <stop offset="100%" stop-color="#2dd4bf" />
+                      </linearGradient>
+                      <linearGradient id="hrGradSecondary" x1="0%" y1="100%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#0284c7" />
+                        <stop offset="50%" stop-color="#6366f1" />
+                        <stop offset="100%" stop-color="#38bdf8" />
+                      </linearGradient>
+                      <linearGradient id="hrGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#fde047" />
+                        <stop offset="50%" stop-color="#fbbf24" />
+                        <stop offset="100%" stop-color="#d97706" />
+                      </linearGradient>
+                      <linearGradient id="hrShieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="rgba(56, 189, 248, 0.16)" />
+                        <stop offset="100%" stop-color="rgba(45, 212, 191, 0.06)" />
+                      </linearGradient>
+                      <filter id="hrMasterGlow" x="-30%" y="-30%" width="160%" height="160%">
+                        <feGaussianBlur stdDeviation="6" result="blur" />
+                        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                      </filter>
+                    </defs>
+
+                    <!-- Outer Hexagonal Tech Geometry -->
+                    <polygon points="110,12 192,54 192,166 110,208 28,166 28,54" stroke="url(#hrGradPrimary)" stroke-width="2.5" stroke-dasharray="10 8" opacity="0.6" class="rotating-hex-ring" />
+                    <!-- Inner Tech Shield -->
+                    <polygon points="110,24 182,60 182,160 110,196 38,160 38,60" fill="url(#hrShieldGrad)" stroke="url(#hrGradSecondary)" stroke-width="2" class="shield-facet" />
+
+                    <!-- Network Constellation Node Connectors -->
+                    <circle cx="110" cy="48" r="6.5" fill="url(#hrGoldGrad)" class="pulse-node node-top" />
+                    <circle cx="62" cy="162" r="5.5" fill="#38bdf8" class="pulse-node node-left" />
+                    <circle cx="158" cy="162" r="5.5" fill="#2dd4bf" class="pulse-node node-right" />
+                    
+                    <line x1="110" y1="48" x2="62" y2="162" stroke="rgba(56, 189, 248, 0.35)" stroke-width="1.5" stroke-dasharray="4 4" class="network-line" />
+                    <line x1="110" y1="48" x2="158" y2="162" stroke="rgba(45, 212, 191, 0.35)" stroke-width="1.5" stroke-dasharray="4 4" class="network-line" />
+                    <line x1="62" y1="162" x2="158" y2="162" stroke="rgba(251, 191, 36, 0.35)" stroke-width="1.5" stroke-dasharray="4 4" class="network-line" />
+
+                    <!-- Master HR Bold Monogram Paths -->
+                    <!-- Letter H -->
+                    <path d="M60 76 V144 M60 110 H96 M96 76 V144" stroke="url(#hrGradPrimary)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" class="hr-path-letter" filter="url(#hrMasterGlow)" />
+                    <path d="M60 76 V144 M60 110 H96 M96 76 V144" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" />
+
+                    <!-- Letter R -->
+                    <path d="M124 76 V144 M124 76 H152 C166 76 172 85 172 95 C172 106 163 112 148 112 H124 M147 112 L171 144" stroke="url(#hrGradPrimary)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" class="hr-path-letter" filter="url(#hrMasterGlow)" />
+                    <path d="M124 76 V144 M124 76 H152 C166 76 172 85 172 95 C172 106 163 112 148 112 H124 M147 112 L171 144" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" />
+
+                    <!-- Center Talent Flare Star -->
+                    <path d="M110 95 L113 104 L122 107 L113 110 L110 119 L107 110 L98 107 L107 104 Z" fill="url(#hrGoldGrad)" class="talent-star-pulse" filter="url(#hrMasterGlow)" />
+                  </svg>
+                  
+                  <!-- Pulsing Ripple Rings -->
+                  <div class="hr-pulse-ripple ripple-1"></div>
+                  <div class="hr-pulse-ripple ripple-2"></div>
+                </div>
+              </div>
+
+              <!-- HR Showcase Footer Details (Clean Name Only) -->
+              <div class="portrait-footer-caption hr-footer-caption">
+                <strong class="caption-name" data-i18n="hero.name">رنا أسامة الصردي</strong>
+              </div>
+            </div>
+
+            <!-- Floating Interactive Badge (Recruitment & Selection) -->
+            <div class="float-badge badge-top-corner">
+              <div class="float-icon"><i class="fa-solid fa-user-check"></i></div>
+              <div class="float-info">
+                <span class="float-label" data-i18n="badges.recruitmentTitle">Recruitment & Selection</span>
+                <span class="float-sub" data-i18n="badges.recruitmentSub">التوظيف والمقابلات</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag" data-i18n="about.tag"><i class="fa-regular fa-id-card"></i> النبذة الشخصية</span>
+          <h2 class="section-title" data-i18n="about.title">عن مسيرتي وشغفي المهني</h2>
+          <p class="section-subtitle" data-i18n="about.sectionSubtitle">رؤية واضحة نحو التميز في إدارة وتطوير الكفاءات البشرية</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-layout-grid">
+          
+          <!-- Main Narrative Bio Card -->
+          <div class="about-card-narrative" data-tilt>
+            <div class="narrative-top">
+              <div class="narrative-avatar-box">
+                <div class="narrative-hr-avatar">
+                  <div class="avatar-hr-circle">
+                    <span class="avatar-hr-text">HR</span>
+                    <i class="fa-solid fa-user-tie avatar-hr-subicon"></i>
+                  </div>
+                  <span class="avatar-pulse-dot"></span>
+                </div>
+              </div>
+              <div class="narrative-user-info">
+                <h3 class="user-fullname" data-i18n="about.cardHeading">رنا أسامة الصردي</h3>
+                <p class="user-credential" data-i18n="about.cardSub">طالبة في السنة الرابعة | كلية التجارة - برنامج المحاسبة والمالية | جامعة طنطا</p>
+              </div>
+            </div>
+
+            <div class="narrative-body">
+              <p class="narrative-paragraph" data-i18n="about.p1">
+                طالبة طموحة في السنة الرابعة بكلية التجارة، برنامج المحاسبة والمالية، جامعة طنطا، شغوفة بمجال الموارد البشرية وتسعى باستمرار لتطوير نفسها مهنيًا وشخصيًا. لديّ خبرة في العمل الجماعي والقيادة والتواصل والأنشطة التنظيمية من خلال التدريب الداخلي والأنشطة التطوعية.
+              </p>
+              <p class="narrative-paragraph" data-i18n="about.p2">
+                اكتسبت خبرة عملية في مجال الموارد البشرية في التوظيف والاختيار، بما في ذلك كتابة إعلانات الوظائف، وإجراء مقابلات الفرز، والمشاركة في المقابلات الشخصية، وأعمل حاليًا على توسيع معرفتي في شؤون الموظفين وقانون العمل والرواتب وعمليات الموارد البشرية.
+              </p>
+              <p class="narrative-paragraph" data-i18n="about.p3">
+                لديّ خبرة في قيادة وتقييم الفرق، وتنظيم المهام، ومتابعة الأداء، وإعداد التقارير، ودعم تطوير الفريق. مهتمة بالتوظيف، وتطوير الموظفين، وإدارة المواهب، وبناء فرق عمل عالية الأداء.
+              </p>
+              <p class="narrative-paragraph" data-i18n="about.p4">
+                أحرص دائمًا على اكتساب مهارات جديدة، وخوض التحديات، وتطبيق معارفي في بيئات عملية، مع مواصلة تطوير خبرتي في مجال الموارد البشرية والمساهمة في مشاريع هادفة.
+              </p>
+            </div>
+          </div>
+
+          <!-- Strategic Pillars Cards -->
+          <div class="about-pillars-stack">
+            
+            <div class="pillar-box" data-tilt>
+              <div class="pillar-icon-wrap icon-cyan"><i class="fa-solid fa-bullseye"></i></div>
+              <div class="pillar-content">
+                <h4 class="pillar-title" data-i18n="pillars.p1Title">التوظيف والاختيار (Recruitment & Selection)</h4>
+                <p class="pillar-desc" data-i18n="pillars.p1Desc">إعداد إعلانات الوظائف، الفرز الدقيق للمرشحين، إجراء مقابلات الفرز والمقابلات الفردية.</p>
+              </div>
+            </div>
+
+            <div class="pillar-box" data-tilt>
+              <div class="pillar-icon-wrap icon-indigo"><i class="fa-solid fa-file-invoice"></i></div>
+              <div class="pillar-content">
+                <h4 class="pillar-title" data-i18n="pillars.p2Title">شؤون الموظفين والرواتب (Personnel & Payroll)</h4>
+                <p class="pillar-desc" data-i18n="pillars.p2Desc">ملفات العاملين، الإجراءات الإدارية، أساسيات الرواتب والاستقطاعات والتكامل الوظيفي.</p>
+              </div>
+            </div>
+
+            <div class="pillar-box" data-tilt>
+              <div class="pillar-icon-wrap icon-teal"><i class="fa-solid fa-people-group"></i></div>
+              <div class="pillar-content">
+                <h4 class="pillar-title" data-i18n="pillars.p3Title">القيادة وإدارة الفرق (Leadership & Team Management)</h4>
+                <p class="pillar-desc" data-i18n="pillars.p3Desc">قيادة لجان الموارد البشرية، توزيع المهام، تقييم الأداء، وبناء فرق عمل عالية الأداء والتناغم.</p>
+              </div>
+            </div>
+
+            <div class="pillar-box" data-tilt>
+              <div class="pillar-icon-wrap icon-gold"><i class="fa-solid fa-calculator"></i></div>
+              <div class="pillar-content">
+                <h4 class="pillar-title" data-i18n="pillars.p4Title">المحاسبة ونظم ERP برمجيات أوفيس 365</h4>
+                <p class="pillar-desc" data-i18n="pillars.p4Desc">شهادة خبير أوفيس 365 (90 ساعة)، الحسابات الدائنة، ونظام أوراكل ERP.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- COMPETENCIES & EXPERTISE MATRIX -->
+    <section class="section competencies-section" id="competencies">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag" data-i18n="comp.tag"><i class="fa-solid fa-brain"></i> المهارات والكفاءات</span>
+          <h2 class="section-title" data-i18n="comp.title">مجالات التميز والقدرات المهنية</h2>
+          <p class="section-subtitle" data-i18n="comp.subtitle">مزيج متكامل من مهارات الموارد البشرية المتخصصة والإدارة المالية والقيادة</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="competencies-grid">
+          
+          <div class="comp-card" data-tilt>
+            <div class="comp-card-header">
+              <i class="fa-solid fa-user-tag comp-icon"></i>
+              <h3 data-i18n="comp.c1Title">التوظيف وجذب الكفاءات</h3>
+            </div>
+            <ul class="comp-list">
+              <li data-i18n="comp.c1_1"><i class="fa-solid fa-check"></i> دورة التوظيف الكاملة (End-to-End Cycle)</li>
+              <li data-i18n="comp.c1_2"><i class="fa-solid fa-check"></i> تحليل وتوصيف الوظائف (Job Analysis)</li>
+              <li data-i18n="comp.c1_3"><i class="fa-solid fa-check"></i> صياغة ونشر إعلانات الوظائف</li>
+              <li data-i18n="comp.c1_4"><i class="fa-solid fa-check"></i> فرز وتقييم السير الذاتية (CV Screening)</li>
+              <li data-i18n="comp.c1_5"><i class="fa-solid fa-check"></i> إجراء المقابلات الأولية والهاتفية</li>
+            </ul>
+          </div>
+
+          <div class="comp-card" data-tilt>
+            <div class="comp-card-header">
+              <i class="fa-solid fa-file-invoice-dollar comp-icon"></i>
+              <h3 data-i18n="comp.c2Title">شؤون الموظفين والرواتب</h3>
+            </div>
+            <ul class="comp-list">
+              <li data-i18n="comp.c2_1"><i class="fa-solid fa-check"></i> إدارة ملفات ومستندات الموظفين (Personnel)</li>
+              <li data-i18n="comp.c2_2"><i class="fa-solid fa-check"></i> أساسيات إعداد الرواتب (Payroll Process)</li>
+              <li data-i18n="comp.c2_3"><i class="fa-solid fa-check"></i> احتساب الحضور والغياب والاستقطاعات</li>
+              <li data-i18n="comp.c2_4"><i class="fa-solid fa-check"></i> الترابط بين التوظيف والشؤون والرواتب</li>
+              <li data-i18n="comp.c2_5"><i class="fa-solid fa-check"></i> قانون العمل رقم ١٤ لسنة ٢٠٢٥ والتحقيقات</li>
+            </ul>
+          </div>
+
+          <div class="comp-card" data-tilt>
+            <div class="comp-card-header">
+              <i class="fa-solid fa-sitemap comp-icon"></i>
+              <h3 data-i18n="comp.c3Title">القيادة وإدارة الفرق</h3>
+            </div>
+            <ul class="comp-list">
+              <li data-i18n="comp.c3_1"><i class="fa-solid fa-check"></i> قيادة وتوجيه لجان العمل</li>
+              <li data-i18n="comp.c3_2"><i class="fa-solid fa-check"></i> تنظيم وتوزيع المهام ومتابعة الالتزام</li>
+              <li data-i18n="comp.c3_3"><i class="fa-solid fa-check"></i> تقييم الأداء الدوري وتحديد نقاط القوة</li>
+              <li data-i18n="comp.c3_4"><i class="fa-solid fa-check"></i> استقبال وتهيئة الأعضاء الجدد (Onboarding)</li>
+              <li data-i18n="comp.c3_5"><i class="fa-solid fa-check"></i> حل المشكلات وإدارة النزاعات</li>
+            </ul>
+          </div>
+
+          <div class="comp-card" data-tilt>
+            <div class="comp-card-header">
+              <i class="fa-solid fa-laptop-code comp-icon"></i>
+              <h3 data-i18n="comp.c4Title">البرمجيات والنظم المالية ERP</h3>
+            </div>
+            <ul class="comp-list">
+              <li data-i18n="comp.c4_1"><i class="fa-solid fa-check"></i> Microsoft Office 365 (Word, Excel Expert)</li>
+              <li data-i18n="comp.c4_2"><i class="fa-solid fa-check"></i> تحليل البيانات وتنسيق التقارير (Data Analysis)</li>
+              <li data-i18n="comp.c4_3"><i class="fa-solid fa-check"></i> نظام أوراكل لتخطيط الموارد (Oracle ERP)</li>
+              <li data-i18n="comp.c4_4"><i class="fa-solid fa-check"></i> إدارة الحسابات الدائنة (Accounts Payable)</li>
+              <li data-i18n="comp.c4_5"><i class="fa-solid fa-check"></i> التدقيق المالي والتقارير المحاسبية</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WORKSHOPS & PROFESSIONAL DEVELOPMENT SECTION -->
+    <section class="section workshops-section" id="workshops">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag" data-i18n="workshops.tag"><i class="fa-solid fa-certificate"></i> التطوير المهني والميداني</span>
+          <h2 class="section-title" data-i18n="workshops.title">ورش العمل والتطوير المهني</h2>
+          <p class="section-subtitle" data-i18n="workshops.subtitle">مشاركات تفاعلية وورش عمل تطبيقية مع نخبة من المؤسسات والمراكز المعتمدة</p>
+          <div class="section-line"></div>
+        </div>
+
+        <!-- Interactive Category Filter Tabs -->
+        <div class="workshops-filter-nav">
+          <button class="filter-btn active" data-filter="all">
+            <i class="fa-solid fa-border-all"></i>
+            <span data-i18n="workshops.filterAll">جميع الورش</span>
+          </button>
+          <button class="filter-btn" data-filter="labor-law">
+            <i class="fa-solid fa-scale-balanced"></i>
+            <span data-i18n="workshops.filterLaborLaw">قانون العمل والموارد البشرية</span>
+          </button>
+          <button class="filter-btn" data-filter="uccd">
+            <i class="fa-solid fa-briefcase"></i>
+            <span data-i18n="workshops.filterUccd">التطوير الوظيفي (UCCD)</span>
+          </button>
+          <button class="filter-btn" data-filter="creativa">
+            <i class="fa-solid fa-lightbulb"></i>
+            <span data-i18n="workshops.filterCreativa">الابتكار وسلاسل الإمداد (Creativa)</span>
+          </button>
+          <button class="filter-btn" data-filter="beready">
+            <i class="fa-solid fa-rocket"></i>
+            <span data-i18n="workshops.filterBeReady">مبادرة كُن مستعداً</span>
+          </button>
+        </div>
+
+        <!-- Workshops Interactive Showcase Grid -->
+        <div class="workshops-grid">
+          
+          <!-- Workshop 1: HR & Labor Law Workshop No. 14 / 2025 -->
+          <div class="workshop-card" data-category="labor-law" data-tilt>
+            <div class="workshop-media-box">
+              <img src="assets/images/workshop_labor_law.jpg" alt="HR & Labor Law Workshop" class="workshop-img lightbox-trigger" data-title="ورشة عمل الموارد البشرية وقانون العمل" data-caption="التحقيقات والإجراءات التأديبية وإنهاء الخدمة بموجب قانون العمل رقم 14 لسنة 2025">
+              <div class="media-overlay">
+                <button class="lightbox-btn lightbox-trigger" data-img="assets/images/workshop_labor_law.jpg" data-title="ورشة عمل الموارد البشرية وقانون العمل" data-caption="التحقيقات والإجراءات التأديبية وإنهاء الخدمة بموجب قانون العمل رقم 14 لسنة 2025">
+                  <i class="fa-solid fa-expand"></i> <span data-i18n="workshops.zoomBtn">تكبير الصورة</span>
+                </button>
+              </div>
+              <span class="workshop-badge-corner"><i class="fa-solid fa-gavel"></i> Labor Law 2025</span>
+            </div>
+
+            <div class="workshop-content">
+              <div class="workshop-meta">
+                <span class="meta-provider"><i class="fa-regular fa-building"></i> HR & Labor Law Workshop</span>
+                <span class="meta-date"><i class="fa-regular fa-calendar-check"></i> 2025/2026</span>
+              </div>
+
+              <h3 class="workshop-title" data-i18n="workshops.w1Title">التحقيقات والإجراءات التأديبية وإنهاء الخدمة</h3>
+              <div class="workshop-badge-law" data-i18n="workshops.w1LawBadge">بموجب قانون العمل رقم ١٤ لسنة ٢٠٢٥</div>
+
+              <p class="workshop-desc" data-i18n="workshops.w1Desc">
+                اكتساب معرفة عملية متقدمة بضوابط التحقيقات في بيئة العمل، والإجراءات والتدابير التأديبية القانونية، ولوائح إنهاء الخدمة بما يتوافق بدقة مع أحكام قانون العمل المصري الحديث.
+              </p>
+
+              <div class="workshop-highlights">
+                <h4 class="highlights-title"><i class="fa-solid fa-check-double"></i> <span data-i18n="workshops.keyTakeaways">أبرز المخرجات والمهارات:</span></h4>
+                <ul>
+                  <li data-i18n="workshops.w1_1"><i class="fa-solid fa-circle-check"></i> إدارة التحقيقات المهنية وتوثيق المحاضر الرسمية</li>
+                  <li data-i18n="workshops.w1_2"><i class="fa-solid fa-circle-check"></i> تطبيق لائحة الجزاءات والتدابير التأديبية القانونية</li>
+                  <li data-i18n="workshops.w1_3"><i class="fa-solid fa-circle-check"></i> لوائح وضوابط إنهاء الخدمة وتفادي النزاعات العمالية</li>
+                </ul>
+              </div>
+
+              <div class="workshop-tags-footer">
+                <span class="tag-pill">Labor Law No. 14</span>
+                <span class="tag-pill">Disciplinary Actions</span>
+                <span class="tag-pill">Workplace Investigations</span>
+                <span class="tag-pill">Termination Regulations</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Workshop 2: UCCD – Faculty of Commerce, Tanta University -->
+          <div class="workshop-card" data-category="uccd" data-tilt>
+            <div class="workshop-media-box">
+              <img src="assets/images/workshop_uccd.jpg" alt="UCCD Tanta University" class="workshop-img lightbox-trigger" data-title="المركز الجامعي للتطوير المهني (UCCD) - جامعة طنطا" data-caption="مجموعة ورش التخطيط الوظيفي وإعداد السير الذاتية والمقابلات الشخصية">
+              <div class="media-overlay">
+                <button class="lightbox-btn lightbox-trigger" data-img="assets/images/workshop_uccd.jpg" data-title="المركز الجامعي للتطوير المهني (UCCD) - جامعة طنطا" data-caption="مجموعة ورش التخطيط الوظيفي وإعداد السير الذاتية والمقابلات الشخصية">
+                  <i class="fa-solid fa-expand"></i> <span data-i18n="workshops.zoomBtn">تكبير الصورة</span>
+                </button>
+              </div>
+              <span class="workshop-badge-corner"><i class="fa-solid fa-graduation-cap"></i> UCCD Tanta</span>
+            </div>
+
+            <div class="workshop-content">
+              <div class="workshop-meta">
+                <span class="meta-provider"><i class="fa-solid fa-building-columns"></i> كلية التجارة، جامعة طنطا (UCCD)</span>
+                <span class="meta-date"><i class="fa-regular fa-calendar-check"></i> برامج وتدريبات معتمدة</span>
+              </div>
+
+              <h3 class="workshop-title" data-i18n="workshops.w2Title">حزمة برامج التطوير المهني والجاهزية الوظيفية</h3>
+
+              <p class="workshop-desc" data-i18n="workshops.w2Desc">
+                برامج وورش عمل متخصصة من المركز الجامعي للتطوير المهني بجامعة طنطا لاكتساب أسس الجاهزية لسوق العمل والتميز في التخطيط المهني.
+              </p>
+
+              <div class="workshop-highlights">
+                <h4 class="highlights-title"><i class="fa-solid fa-check-double"></i> <span data-i18n="workshops.keyTakeaways">المحاور الخمسة الرئيسية:</span></h4>
+                <div class="modules-grid">
+                  <div class="module-item">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <div>
+                      <strong data-i18n="workshops.w2_m1_t">كتابة السيرة الذاتية (CV & Resume):</strong>
+                      <span data-i18n="workshops.w2_m1_d">إنشاء وتطوير سير ذاتية احترافية تواكب أنظمة ATS.</span>
+                    </div>
+                  </div>
+                  <div class="module-item">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <div>
+                      <strong data-i18n="workshops.w2_m2_t">البحث عن الوظائف (Job Research):</strong>
+                      <span data-i18n="workshops.w2_m2_d">تحليل متطلبات الوظائف والبحث الفعّال عن الفرص.</span>
+                    </div>
+                  </div>
+                  <div class="module-item">
+                    <i class="fa-solid fa-user-tie"></i>
+                    <div>
+                      <strong data-i18n="workshops.w2_m3_t">مهارات المقابلات (Interview Skills):</strong>
+                      <span data-i18n="workshops.w2_m3_d">تقنيات المقابلات الفعّالة، الإقناع، والتواصل الاحترافي.</span>
+                    </div>
+                  </div>
+                  <div class="module-item">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <div>
+                      <strong data-i18n="workshops.w2_m4_t">العلامة الشخصية (Personal Branding):</strong>
+                      <span data-i18n="workshops.w2_m4_d">بناء الهوية المهنية وتقديم النفس بقوة في سوق العمل.</span>
+                    </div>
+                  </div>
+                  <div class="module-item full-width-module">
+                    <i class="fa-solid fa-route"></i>
+                    <div>
+                      <strong data-i18n="workshops.w2_m5_t">التخطيط الوظيفي (Career Planning):</strong>
+                      <span data-i18n="workshops.w2_m5_d">رسم المسار المهني وتحديد الأهداف والتطوير المستمر.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Gallery & Certificate Thumbs -->
+              <div class="workshop-mini-gallery">
+                <span class="gallery-label"><i class="fa-solid fa-award"></i> صور الجلسات والشهادة الرسمية:</span>
+                <div class="mini-gallery-row">
+                  <img src="assets/images/workshop_uccd.jpg" alt="UCCD session" class="mini-thumb lightbox-trigger" data-title="UCCD - جلسة التخطيط المهني" data-caption="مشاركون في برنامج UCCD">
+                  <img src="assets/images/workshop_uccd_2.jpg" alt="UCCD session 2" class="mini-thumb lightbox-trigger" data-title="UCCD - ورشة العمل الجماعية" data-caption="التطوير المهني وإعداد السير الذاتية">
+                  <img src="assets/images/cert_uccd_career_tips.jpg" alt="UCCD Certificate" class="mini-thumb lightbox-trigger cert-thumb-highlight" data-title="شهادة حضور ورش العمل المهنية UCCD" data-caption="المركز الجامعي للتطوير المهني - كلية التجارة جامعة طنطا">
+                </div>
+              </div>
+
+              <div class="workshop-tags-footer">
+                <span class="tag-pill">CV Writing</span>
+                <span class="tag-pill">Interview Mastery</span>
+                <span class="tag-pill">Personal Branding</span>
+                <span class="tag-pill">Career Planning</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Workshop 3: Creativa Tanta (ITIDA / TIEC / Kenko) -->
+          <div class="workshop-card" data-category="creativa" data-tilt>
+            <div class="workshop-media-box">
+              <img src="assets/images/workshop_creativa_ideation.jpg" alt="Creativa Tanta Bootcamp" class="workshop-img lightbox-trigger" data-title="مراكز إبداع مصر الرقمية - كرياتيفا طنطا" data-caption="معسكر توليد الأفكار وسلاسل الإمداد - بالتعاون مع ITIDA و TIEC و Kenko">
+              <div class="media-overlay">
+                <button class="lightbox-btn lightbox-trigger" data-img="assets/images/workshop_creativa_ideation.jpg" data-title="مراكز إبداع مصر الرقمية - كرياتيفا طنطا" data-caption="معسكر توليد الأفكار وسلاسل الإمداد - بالتعاون مع ITIDA و TIEC و Kenko">
+                  <i class="fa-solid fa-expand"></i> <span data-i18n="workshops.zoomBtn">تكبير الصورة</span>
+                </button>
+              </div>
+              <span class="workshop-badge-corner"><i class="fa-solid fa-lightbulb"></i> Creativa Hub</span>
+            </div>
+
+            <div class="workshop-content">
+              <div class="workshop-meta">
+                <span class="meta-provider"><i class="fa-solid fa-network-wired"></i> كرياتيفا طنطا (ITIDA | TIEC | Kenko)</span>
+                <span class="meta-date"><i class="fa-regular fa-calendar-check"></i> معسكرات وشهادات معتمدة</span>
+              </div>
+
+              <h3 class="workshop-title" data-i18n="workshops.w3Title">الابتكار، توليد الأفكار وسلاسل الإمداد</h3>
+
+              <p class="workshop-desc" data-i18n="workshops.w3Desc">
+                المشاركة في المعسكرات التدريبية المتقدمة لمركز إبداع مصر الرقمية (كرياتيفا طنطا)، والتي عززت مهارات التفكير الابتكاري، العمل الجماعي تحت الضغط، وفهم سلاسل الإمداد واستدامة الوظائف.
+              </p>
+
+              <div class="workshop-highlights">
+                <h4 class="highlights-title"><i class="fa-solid fa-check-double"></i> <span data-i18n="workshops.keyTakeaways">البرامج والشهادات المنجزة:</span></h4>
+                <div class="creativa-modules-stack">
+                  <div class="creativa-mod-card">
+                    <div class="mod-icon-badge"><i class="fa-solid fa-lightbulb"></i></div>
+                    <div>
+                      <strong data-i18n="workshops.w3_m1_t">معسكر توليد الأفكار (Ideation Bootcamp):</strong>
+                      <p data-i18n="workshops.w3_m1_d">تطوير العمل الجماعي، والعمل تحت الضغط، وحل المشكلات وابتكار الأفكار والتواصل عبر مشروع عملي متكامل.</p>
+                    </div>
+                  </div>
+                  <div class="creativa-mod-card">
+                    <div class="mod-icon-badge"><i class="fa-solid fa-truck-ramp-box"></i></div>
+                    <div>
+                      <strong data-i18n="workshops.w3_m2_t">إدارة سلسلة التوريد (Supply Chain Management):</strong>
+                      <p data-i18n="workshops.w3_m2_d">مقدمة شاملة عن عمليات وسلاسل التوريد وكيفية مساهمة العمليات اللوجستية في تحقيق كفاءة الأعمال.</p>
+                    </div>
+                  </div>
+                  <div class="creativa-mod-card">
+                    <div class="mod-icon-badge"><i class="fa-solid fa-compass"></i></div>
+                    <div>
+                      <strong data-i18n="workshops.w3_m3_t">وضوح المسار واستدامة الشواغر (Career Clarity):</strong>
+                      <p data-i18n="workshops.w3_m3_d">اكتساب رؤى متعمقة حول التوجه الوظيفي، فرص العمل الواعدة، واستدامة التطوير المهني المستقبلي.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Gallery Thumbs with Verified Certificates -->
+              <div class="workshop-mini-gallery">
+                <span class="gallery-label"><i class="fa-solid fa-images"></i> معرض الصور والشهادات الرسمية الثلاث:</span>
+                <div class="mini-gallery-row">
+                  <img src="assets/images/cert_creativa_ideation.jpg" alt="Ideation Certificate" class="mini-thumb lightbox-trigger cert-thumb-highlight" data-title="شهادة معسكر توليد الأفكار" data-caption="صادرة من ITIDA و TIEC وكرياتيفا و Kenko (فبراير 2026)">
+                  <img src="assets/images/cert_creativa_supplychain.jpg" alt="Supply Chain Certificate" class="mini-thumb lightbox-trigger cert-thumb-highlight" data-title="شهادة برنامج سلاسل الإمداد" data-caption="صادرة من ITIDA و TIEC وكرياتيفا و Kenko (يناير 2026)">
+                  <img src="assets/images/cert_creativa_career_clarity.jpg" alt="Career Clarity Certificate" class="mini-thumb lightbox-trigger cert-thumb-highlight" data-title="شهادة برنامج وضوح المسار الوظيفي واستدامة الشواغر" data-caption="صادرة من ITIDA و TIEC وكرياتيفا و Kenko (يونيو 2026)">
+                  <img src="assets/images/workshop_creativa_ideation.jpg" alt="Ideation Bootcamp" class="mini-thumb lightbox-trigger" data-title="كرياتيفا طنطا - معسكر توليد الأفكار" data-caption="فريق عمل معسكر الابتكار وتوليد الأفكار">
+                </div>
+              </div>
+
+              <div class="workshop-tags-footer">
+                <span class="tag-pill">Ideation Bootcamp</span>
+                <span class="tag-pill">Supply Chain</span>
+                <span class="tag-pill">Career Clarity</span>
+                <span class="tag-pill">ITIDA & TIEC</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Workshop 4: Be Ready Initiative – Module I: Employability Skills -->
+          <div class="workshop-card" data-category="beready" data-tilt>
+            <div class="workshop-media-box">
+              <img src="assets/images/workshop_beready.jpg" alt="Be Ready Initiative" class="workshop-img lightbox-trigger" data-title="مبادرة كُن مستعداً (Be Ready Initiative)" data-caption="الوحدة الأولى: مهارات التوظيف والجاهزية لسوق العمل (Employability Skills)">
+              <div class="media-overlay">
+                <button class="lightbox-btn lightbox-trigger" data-img="assets/images/workshop_beready.jpg" data-title="مبادرة كُن مستعداً (Be Ready Initiative)" data-caption="الوحدة الأولى: مهارات التوظيف والجاهزية لسوق العمل (Employability Skills)">
+                  <i class="fa-solid fa-expand"></i> <span data-i18n="workshops.zoomBtn">تكبير الصورة</span>
+                </button>
+              </div>
+              <span class="workshop-badge-corner"><i class="fa-solid fa-rocket"></i> Be Ready</span>
+            </div>
+
+            <div class="workshop-content">
+              <div class="workshop-meta">
+                <span class="meta-provider"><i class="fa-solid fa-award"></i> مبادرة كُن مستعداً (Be Ready Initiative)</span>
+                <span class="meta-date"><i class="fa-regular fa-calendar-check"></i> الوحدة الأولى (Module I)</span>
+              </div>
+
+              <h3 class="workshop-title" data-i18n="workshops.w4Title">مهارات التوظيف وجاهزية سوق العمل</h3>
+
+              <p class="workshop-desc" data-i18n="workshops.w4Desc">
+                برنامج تدريبي متكامل ركّز على صقل وتطوير الحزمة الجوهرية من مهارات التوظيف اللازمة للنجاح والريادة والتعامل مع مختلف تحديات بيئات العمل الحديثة.
+              </p>
+
+              <div class="workshop-highlights">
+                <h4 class="highlights-title"><i class="fa-solid fa-check-double"></i> <span data-i18n="workshops.keyTakeaways">الجدارات والمهارات المكتسبة:</span></h4>
+                <div class="skills-chips-grid">
+                  <span class="skill-chip"><i class="fa-solid fa-comments"></i> التواصل الفعّال (Communication)</span>
+                  <span class="skill-chip"><i class="fa-solid fa-people-group"></i> العمل الجماعي (Teamwork)</span>
+                  <span class="skill-chip"><i class="fa-solid fa-crown"></i> مهارات القيادة (Leadership)</span>
+                  <span class="skill-chip"><i class="fa-solid fa-hourglass-half"></i> إدارة الوقت (Time Management)</span>
+                  <span class="skill-chip"><i class="fa-solid fa-puzzle-piece"></i> حل المشكلات (Problem-Solving)</span>
+                  <span class="skill-chip"><i class="fa-solid fa-brain"></i> التفكير النقدي (Critical Thinking)</span>
+                  <span class="skill-chip"><i class="fa-solid fa-shield-halved"></i> المرونة والتكيف (Adaptability)</span>
+                  <span class="skill-chip"><i class="fa-solid fa-briefcase"></i> مواجهة تحديات العمل (Workplace Challenges)</span>
+                </div>
+              </div>
+
+              <!-- Gallery Thumbs for Be Ready -->
+              <div class="workshop-mini-gallery">
+                <span class="gallery-label"><i class="fa-solid fa-award"></i> صور التدريب والشهادة المعتمدة:</span>
+                <div class="mini-gallery-row">
+                  <img src="assets/images/workshop_beready.jpg" alt="Be Ready Session" class="mini-thumb lightbox-trigger" data-title="مبادرة كن مستعداً - جلسة مهارات التوظيف" data-caption="مشاركون في برنامج كن مستعداً">
+                  <img src="assets/images/cert_beready_employability.jpg" alt="Be Ready Certificate" class="mini-thumb lightbox-trigger cert-thumb-highlight" data-title="شهادة حضور مبادرة كن مستعداً" data-caption="شهادة رسمية صادرة برعاية وزارة التعليم العالي والبحث العلمي واليونيسكو وUNDP وسيسكو وكورسيرة">
+                </div>
+              </div>
+
+              <div class="workshop-tags-footer">
+                <span class="tag-pill">Employability Skills</span>
+                <span class="tag-pill">Adaptability</span>
+                <span class="tag-pill">Critical Thinking</span>
+                <span class="tag-pill">Career Readiness</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TRAINING EXPERIENCE SECTION -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag" data-i18n="exp.tag"><i class="fa-solid fa-briefcase"></i> المسيرة المهنية</span>
+          <h2 class="section-title" data-i18n="exp.title">الخبرة التدريبية والعملية</h2>
+          <p class="section-subtitle" data-i18n="exp.sectionSubtitle">تطبيقات ميدانية وخبرات مهنية متخصصة في بيئات العمل الحقيقية</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="timeline-container">
+          
+          <!-- Experience Card 1: Valora Business Solutions -->
+          <div class="timeline-row current-role-row">
+            <div class="timeline-marker">
+              <span class="marker-circle"><i class="fa-solid fa-briefcase"></i></span>
+            </div>
+
+            <div class="timeline-content-card" data-tilt>
+              <div class="badge-status-top" data-i18n="exp.vbsStatus">يوليو 2026 - سبتمبر 2026 (3 أشهر)</div>
+              
+              <div class="card-role-header">
+                <div>
+                  <h3 class="role-designation" data-i18n="exp.vbsRole">متدرب في قسم الموارد البشرية (HR Intern)</h3>
+                  <h4 class="company-heading">
+                    <i class="fa-regular fa-building"></i>
+                    <span data-i18n="exp.vbsCompany">شركة Valora Business Solutions (VBS)</span>
+                  </h4>
+                </div>
+                <div class="role-dates">
+                  <i class="fa-regular fa-calendar-check"></i>
+                  <span data-i18n="exp.vbsPeriod">يوليو ٢٠٢٦ - سبتمبر ٢٠٢٦ (٣ أشهر)</span>
+                </div>
+              </div>
+
+              <div class="role-body">
+                <ul class="role-duties-list">
+                  <li data-i18n="exp.vbs1">تلقيتُ تدريبًا عمليًا في التوظيف والاختيار (Recruitment & Selection)، بما يشمل البحث عن المرشحين (Candidate Sourcing)، فرز السير الذاتية (CV Screening)، إجراء المقابلات الأولية، وفهم دورة التوظيف الكاملة.</li>
+                  <li data-i18n="exp.vbs2">اكتسبتُ معرفة عملية في شؤون الموظفين (Personnel Operations)، بما يشمل إدارة ملفات الموظفين، المستندات الرسمية، والإجراءات الأساسية الخاصة بالموظفين.</li>
+                  <li data-i18n="exp.vbs3">تعرّفتُ على أساسيات الرواتب (Payroll Fundamentals)، بما في ذلك مكونات الراتب، احتساب الحضور والغياب، الاستقطاعات، وخطوات إعداد الرواتب.</li>
+                  <li data-i18n="exp.vbs4">تعرّفتُ على كيفية ترابط وتكامل وظائف التوظيف وشؤون الموظفين والرواتب داخل قسم الموارد البشرية.</li>
+                  <li data-i18n="exp.vbs5">طوّرتُ قدرتي على تطبيق مفاهيم الموارد البشرية بشكل عملي وفهم طبيعة العمل والمهام اليومية داخل الـ HR.</li>
+                </ul>
+              </div>
+
+              <div class="role-tags-footer">
+                <span class="tag-pill">Recruitment & Selection</span>
+                <span class="tag-pill">Candidate Sourcing</span>
+                <span class="tag-pill">Personnel Operations</span>
+                <span class="tag-pill">Payroll Fundamentals</span>
+                <span class="tag-pill">HR Integration</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Card 2: Arab Contractors -->
+          <div class="timeline-row">
+            <div class="timeline-marker">
+              <span class="marker-circle"><i class="fa-solid fa-calculator"></i></span>
+            </div>
+
+            <div class="timeline-content-card" data-tilt>
+              <div class="card-role-header">
+                <div>
+                  <h3 class="role-designation" data-i18n="exp.acRole">متدرب في قسم المحاسبة والمالية (Accounting & Finance Trainee)</h3>
+                  <h4 class="company-heading">
+                    <i class="fa-regular fa-building"></i>
+                    <span data-i18n="exp.acCompany">شركة المقاولون العرب (Arab Contractors Company)</span>
+                  </h4>
+                </div>
+                <div class="role-dates">
+                  <i class="fa-regular fa-calendar"></i>
+                  <span data-i18n="exp.acPeriod">1 سبتمبر 2024 - 24 سبتمبر 2024</span>
+                </div>
+              </div>
+
+              <div class="role-body">
+                <ul class="role-duties-list">
+                  <li data-i18n="exp.ac1">اكتسبتُ فهمًا للهيكل التنظيمي للشركة، وأقسامها، وسير العمل فيها.</li>
+                  <li data-i18n="exp.ac2">اطلعتُ على وظائف الإدارات المالية الرئيسية، واكتسبتُ خبرة في عملياتها اليومية.</li>
+                  <li data-i18n="exp.ac3">تعرّفتُ على قسم الحسابات الدائنة، بما في ذلك معالجة الفواتير وإجراءات الدفع باستخدام نظام أوراكل لتخطيط موارد المؤسسات (Oracle ERP).</li>
+                  <li data-i18n="exp.ac4">اكتسبتُ فهمًا لطبيعة العمليات المحاسبية والمالية في شركة إنشاءات كبيرة.</li>
+                  <li data-i18n="exp.ac5">لاحظتُ كيفية تنسيق الأقسام المختلفة لدعم مشاريع الشركة وعملياتها اليومية.</li>
+                </ul>
+              </div>
+
+              <!-- Official Evaluation Letter Showcase Thumb -->
+              <div class="role-eval-letter-thumb">
+                <span class="eval-label"><i class="fa-solid fa-file-signature"></i> خطاب التقييم الرسمي والاعتماد:</span>
+                <div class="eval-thumb-frame lightbox-trigger" data-img="assets/images/cert_arab_contractors_letter.jpg" data-title="خطاب تقييم شركة المقاولون العرب" data-caption="اجتياز برنامج التدريب المالي والمحاسبي بتقدير ممتاز (1 سبتمبر - 25 سبتمبر 2024)">
+                  <img src="assets/images/cert_arab_contractors_letter.jpg" alt="Arab Contractors Evaluation Letter">
+                  <div class="eval-thumb-overlay">
+                    <i class="fa-solid fa-expand"></i> <span>عرض الخطاب الرسمي (تقدير ممتاز)</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="role-tags-footer">
+                <span class="tag-pill">Grade: Excellent (ممتاز)</span>
+                <span class="tag-pill">Oracle ERP</span>
+                <span class="tag-pill">Accounts Payable</span>
+                <span class="tag-pill">Financial Operations</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- VOLUNTEERING EXPERIENCE SECTION WITH PHOTO -->
+    <section class="section volunteering-section" id="volunteering">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag" data-i18n="vol.tag"><i class="fa-solid fa-hand-holding-heart"></i> المبادرات المجتمعية والقيادية</span>
+          <h2 class="section-title" data-i18n="vol.title">الخبرات التطوعية والقيادية</h2>
+          <p class="section-subtitle" data-i18n="vol.sectionSubtitle">قيادة فرق العمل والمساهمة الفعّالة في تمكين الشباب وتطوير الكوادر</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="volunteer-card-master" data-tilt>
+          
+          <div class="vol-master-top">
+            <div class="vol-avatar-icon">
+              <i class="fa-solid fa-hands-holding-circle"></i>
+            </div>
+            <div class="vol-main-info">
+              <span class="vol-agency-badge" data-i18n="vol.orgBadge">وزارة الشباب والرياضة</span>
+              <h3 class="vol-position" data-i18n="vol.role">رئيسة قسم الموارد البشرية (Head of HR Committee)</h3>
+              <h4 class="vol-entity" data-i18n="vol.org">رواد التطوير والتنمية الشبابية | وزارة الشباب والرياضة</h4>
+            </div>
+            <div class="vol-period-pill">
+              <i class="fa-regular fa-calendar-days"></i>
+              <span data-i18n="vol.period">نوفمبر 2024 – سبتمبر 2025</span>
+            </div>
+          </div>
+
+          <!-- Volunteering Visual Showcase with Photo -->
+          <div class="vol-photo-container">
+            <div class="vol-img-frame">
+              <img src="assets/images/volunteering_youth_sports.jpg" alt="Ministry of Youth and Sports HR Committee" class="vol-photo lightbox-trigger" data-title="لجنة الموارد البشرية - وزارة الشباب والرياضة" data-caption="رواد التطوير والتنمية الشبابية - قيادة لجان العمل والتنظيم">
+              <div class="vol-photo-badge">
+                <i class="fa-solid fa-users"></i> <span data-i18n="vol.photoBadge">فريق عمل رواد التطوير - وزارة الشباب والرياضة</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="vol-pillars-grid">
+            
+            <div class="vol-sub-box">
+              <div class="sub-box-title">
+                <i class="fa-solid fa-people-roof text-cyan"></i>
+                <h4 data-i18n="vol.group1Title">القيادة وإدارة الفريق</h4>
+              </div>
+              <ul>
+                <li data-i18n="vol.point1">قيادة لجنة الموارد البشرية وتنسيق المهام بين أعضاء الفريق.</li>
+                <li data-i18n="vol.point4">متابعة أعضاء الفريق ومراقبة مستوى أدائهم والتزامهم بالمهام.</li>
+                <li data-i18n="vol.point8">الحفاظ على التواصل الفعّال مع أعضاء الفريق والمساعدة في حل المشكلات المتعلقة بالعمل.</li>
+              </ul>
+            </div>
+
+            <div class="vol-sub-box">
+              <div class="sub-box-title">
+                <i class="fa-solid fa-user-plus text-indigo"></i>
+                <h4 data-i18n="vol.group2Title">التوظيف والتهيئة</h4>
+              </div>
+              <ul>
+                <li data-i18n="vol.point2">المشاركة في عمليات التوظيف، بما في ذلك التواصل مع المتقدمين وإجراء المقابلات.</li>
+                <li data-i18n="vol.point3">المساهمة في تقييم المتقدمين واختيار الأعضاء المناسبين للأدوار المختلفة.</li>
+                <li data-i18n="vol.point7">المساهمة في عملية استقبال وتهيئة الأعضاء الجدد وتعريفهم بأدوارهم ومسؤولياتهم.</li>
+              </ul>
+            </div>
+
+            <div class="vol-sub-box vol-box-full">
+              <div class="sub-box-title">
+                <i class="fa-solid fa-chart-pie text-teal"></i>
+                <h4 data-i18n="vol.group3Title">التقييم والتطوير والمهارات المكتسبة</h4>
+              </div>
+              <ul>
+                <li data-i18n="vol.point5">إجراء تقييمات دورية لأداء الأعضاء وتحديد نقاط القوة ومجالات التحسين.</li>
+                <li data-i18n="vol.point6">دعم أعضاء الفريق في تطوير مهاراتهم من خلال المتابعة المستمرة والتوجيه وتقديم الملاحظات.</li>
+                <li data-i18n="vol.point9">تطوير مهارات عملية في إجراء المقابلات، والتواصل، والقيادة، وإدارة الفرق، والتقييم، وحل المشكلات.</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MASTER CERTIFICATIONS SHOWCASE SECTION (ALL 9 VERIFIED CERTIFICATES) -->
+    <section class="section courses-section" id="courses">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag" data-i18n="courses.tag"><i class="fa-solid fa-graduation-cap"></i> التعليم المستمر والتطوير</span>
+          <h2 class="section-title" data-i18n="courses.title">الشهادات والاعتمادات الرسمية التسع</h2>
+          <p class="section-subtitle" data-i18n="courses.sectionSubtitle">معرض الشهادات وخطابات التقييم الرسمية المعتمدة من الجهات والوزارات والجامعات</p>
+          <div class="section-line"></div>
+        </div>
+
+        <!-- 9 Verified Certificates Grid Showcase -->
+        <div class="certs-master-grid">
+          
+          <!-- Cert 1: Microsoft Office 365 Expert (90-Hour) -->
+          <div class="cert-grid-card" data-tilt>
+            <div class="cert-card-media">
+              <img src="assets/images/cert_tanta_microsoft_office.jpg" alt="Microsoft Office 365 Specialist Certificate" class="cert-card-img lightbox-trigger" data-title="شهادة خبير أوفيس 365 المعتمدة (90 ساعة)" data-caption="مركز الخدمة العامة - كلية التجارة جامعة طنطا (تخصص Word, Excel Expert, Data Analysis, Oracle ERP)">
+              <span class="cert-stamp-badge"><i class="fa-solid fa-circle-check"></i> Verified (90 Hours)</span>
+            </div>
+            <div class="cert-card-body">
+              <span class="cert-issuer-badge"><i class="fa-solid fa-building-columns"></i> جامعة طنطا - مركز الخدمة العامة</span>
+              <h3 class="cert-card-title">Microsoft Office 365 Specialist Associate & Expert</h3>
+              <p class="cert-card-text">
+                برنامج تدريبي مكثف 90 ساعة معتمد شامل لاحتراف برمجيات Microsoft Office 365 (Word, Excel Associate & Expert, PowerPoint, Outlook) وتحليل البيانات PFA ونظم Oracle E-Business Suite.
+              </p>
+              <div class="cert-card-skills">
+                <span>Excel Expert</span>
+                <span>Data Analysis</span>
+                <span>Oracle ERP</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 2: Be Ready Initiative Certificate -->
+          <div class="cert-grid-card" data-tilt>
+            <div class="cert-card-media">
+              <img src="assets/images/cert_beready_employability.jpg" alt="Be Ready Employability Certificate" class="cert-card-img lightbox-trigger" data-title="شهادة مبادرة كن مستعداً - مهارات التوظيف" data-caption="صادرة برعاية وزارة التعليم العالي والبحث العلمي، UNDP، اليونيسكو، وسيسكو وكورسيرة (أغسطس - سبتمبر 2025)">
+              <span class="cert-stamp-badge"><i class="fa-solid fa-circle-check"></i> Verified Ministry</span>
+            </div>
+            <div class="cert-card-body">
+              <span class="cert-issuer-badge"><i class="fa-solid fa-rocket"></i> وزارة التعليم العالي & UNDP & Cisco</span>
+              <h3 class="cert-card-title">Be Ready 1M Initiative – Employability Skills Certificate</h3>
+              <p class="cert-card-text">
+                شهادة معتمدة رسمياً لاجتياز البرنامج الأول مهارات التوظيف (Employability Skills) في مركز التطوير المهني بجامعة طنطا.
+              </p>
+              <div class="cert-card-skills">
+                <span>Employability</span>
+                <span>Leadership</span>
+                <span>Critical Thinking</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 3: HR Fundamentals Certificate -->
+          <div class="cert-grid-card" data-tilt>
+            <div class="cert-card-media">
+              <img src="assets/images/certificate_hr_fundamentals.jpg" alt="HR Fundamentals Certificate" class="cert-card-img lightbox-trigger" data-title="شهادة إتمام أساسيات الموارد البشرية (15 ساعة)" data-caption="كلية التجارة جامعة طنطا بالتعاون مع مجموعة إعمار الدلتا (فبراير 2026)">
+              <span class="cert-stamp-badge"><i class="fa-solid fa-circle-check"></i> Verified HR</span>
+            </div>
+            <div class="cert-card-body">
+              <span class="cert-issuer-badge"><i class="fa-solid fa-award"></i> جامعة طنطا & شركة عمار الدلتا</span>
+              <h3 class="cert-card-title">HR Fundamentals Training Program</h3>
+              <p class="cert-card-text">
+                برنامج معتمد في أساسيات الموارد البشرية، التوظيف والاختيار، علاقات الموظفين، وشؤون العاملين والإجراءات الإدارية.
+              </p>
+              <div class="cert-card-skills">
+                <span>Recruitment</span>
+                <span>Personnel</span>
+                <span>Employee Relations</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 4: How to be HR Certificate -->
+          <div class="cert-grid-card" data-tilt>
+            <div class="cert-card-media">
+              <img src="assets/images/cert_how_to_be_hr.jpg" alt="How to be HR Certificate" class="cert-card-img lightbox-trigger" data-title="شهادة برنامج How to be HR (تقدير جيد جداً)" data-caption="صادرة عن المحاضر أحمد عقيل وأمنية أشرف (أكتوبر 2025)">
+              <span class="cert-stamp-badge"><i class="fa-solid fa-circle-check"></i> Grade: Very Good</span>
+            </div>
+            <div class="cert-card-body">
+              <span class="cert-issuer-badge"><i class="fa-solid fa-user-tie"></i> أحمد عقيل (Ahmed Akel)</span>
+              <h3 class="cert-card-title">How to be HR Specialist – Round 84 Certificate</h3>
+              <p class="cert-card-text">
+                شهادة اجتياز البرنامج التطبيقي في أساسيات وإدارة الموارد البشرية والمفاهيم الإدارية بتقدير ممتاز/جيد جداً.
+              </p>
+              <div class="cert-card-skills">
+                <span>HRM Basics</span>
+                <span>Management</span>
+                <span>HR Roles</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 5: Arab Contractors Evaluation Letter -->
+          <div class="cert-grid-card" data-tilt>
+            <div class="cert-card-media">
+              <img src="assets/images/cert_arab_contractors_letter.jpg" alt="Arab Contractors Evaluation Letter" class="cert-card-img lightbox-trigger" data-title="خطاب تقييم شركة المقاولون العرب" data-caption="معتمد وموجه لعميد كلية التجارة جامعة طنطا بتقدير ممتاز (سبتمبر 2024)">
+              <span class="cert-stamp-badge"><i class="fa-solid fa-circle-check"></i> Grade: Excellent (ممتاز)</span>
+            </div>
+            <div class="cert-card-body">
+              <span class="cert-issuer-badge"><i class="fa-solid fa-building"></i> شركة المقاولون العرب</span>
+              <h3 class="cert-card-title">Arab Contractors Official Evaluation Letter</h3>
+              <p class="cert-card-text">
+                خطاب تقييم رسمي لاجتياز البرنامج التدريبي المالي والمحاسبي ونظام Oracle ERP في شركة المقاولون العرب بتقدير ممتاز.
+              </p>
+              <div class="cert-card-skills">
+                <span>Oracle ERP</span>
+                <span>Accounts Payable</span>
+                <span>Grade: Excellent</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 6: Creativa Ideation Bootcamp Certificate -->
+          <div class="cert-grid-card" data-tilt>
+            <div class="cert-card-media">
+              <img src="assets/images/cert_creativa_ideation.jpg" alt="Ideation Bootcamp Certificate" class="cert-card-img lightbox-trigger" data-title="شهادة معسكر توليد الأفكار" data-caption="صادرة عن ITIDA و TIEC وكرياتيفا طنطا بالتعاون مع Kenko (فبراير 2026)">
+              <span class="cert-stamp-badge"><i class="fa-solid fa-circle-check"></i> Verified Innovation</span>
+            </div>
+            <div class="cert-card-body">
+              <span class="cert-issuer-badge"><i class="fa-solid fa-lightbulb"></i> ITIDA | TIEC | Creativa | Kenko</span>
+              <h3 class="cert-card-title">Ideation Bootcamp Program Certificate</h3>
+              <p class="cert-card-text">
+                شهادة إتمام برنامج معسكر توليد الأفكار، العمل تحت الضغط، ابتكار الحلول، والعمل الجماعي التطبيقي.
+              </p>
+              <div class="cert-card-skills">
+                <span>Ideation</span>
+                <span>Teamwork</span>
+                <span>Problem Solving</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 7: Creativa Supply Chain Management Certificate -->
+          <div class="cert-grid-card" data-tilt>
+            <div class="cert-card-media">
+              <img src="assets/images/cert_creativa_supplychain.jpg" alt="Supply Chain Management Certificate" class="cert-card-img lightbox-trigger" data-title="شهادة برنامج إدارة سلسلة التوريد" data-caption="صادرة عن ITIDA و TIEC وكرياتيفا طنطا بالتعاون مع Kenko (يناير 2026)">
+              <span class="cert-stamp-badge"><i class="fa-solid fa-circle-check"></i> Verified Logistics</span>
+            </div>
+            <div class="cert-card-body">
+              <span class="cert-issuer-badge"><i class="fa-solid fa-truck-ramp-box"></i> ITIDA | TIEC | Creativa | Kenko</span>
+              <h3 class="cert-card-title">Supply Chain Management Certificate</h3>
+              <p class="cert-card-text">
+                شهادة إتمام برنامج إدارة سلاسل الإمداد والتوريد وفهم العمليات اللوجستية وتكامل الأنشطة التجارية.
+              </p>
+              <div class="cert-card-skills">
+                <span>Supply Chain</span>
+                <span>Logistics</span>
+                <span>Operations</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 8: Creativa Career Clarity Certificate -->
+          <div class="cert-grid-card" data-tilt>
+            <div class="cert-card-media">
+              <img src="assets/images/cert_creativa_career_clarity.jpg" alt="Career Clarity Certificate" class="cert-card-img lightbox-trigger" data-title="شهادة وضوح المسار الوظيفي واستدامة الشواغر" data-caption="صادرة عن ITIDA و TIEC وكرياتيفا طنطا بالتعاون مع Kenko (يونيو 2026)">
+              <span class="cert-stamp-badge"><i class="fa-solid fa-circle-check"></i> Verified Career</span>
+            </div>
+            <div class="cert-card-body">
+              <span class="cert-issuer-badge"><i class="fa-solid fa-compass"></i> ITIDA | TIEC | Creativa | Kenko</span>
+              <h3 class="cert-card-title">Career Clarity & Vacancies Sustainability Certificate</h3>
+              <p class="cert-card-text">
+                شهادة إتمام برنامج وضوح المسار المهني واكتشاف فرخص العمل والتطوير الوظيفي المستدام.
+              </p>
+              <div class="cert-card-skills">
+                <span>Career Clarity</span>
+                <span>Job Vacancies</span>
+                <span>Sustainability</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 9: UCCD Career Tips Certificate -->
+          <div class="cert-grid-card" data-tilt>
+            <div class="cert-card-media">
+              <img src="assets/images/cert_uccd_career_tips.jpg" alt="UCCD Career Tips Certificate" class="cert-card-img lightbox-trigger" data-title="شهادة حضور ورش التخطيط والجاهزية الوظيفية UCCD" data-caption="المركز الجامعي للتطوير المهني - كلية التجارة جامعة طنطا (ديسمبر 2024)">
+              <span class="cert-stamp-badge"><i class="fa-solid fa-circle-check"></i> Verified UCCD</span>
+            </div>
+            <div class="cert-card-body">
+              <span class="cert-issuer-badge"><i class="fa-solid fa-graduation-cap"></i> UCCD - جامعة طنطا</span>
+              <h3 class="cert-card-title">Career Tips & Tricks Day Workshops Certificate</h3>
+              <p class="cert-card-text">
+                شهادة حضور وتدريب على حزمة المهارات الوظيفية: التخطيط المهني، البحث عن الوظائف، كتابة السير الذاتية، ومقابلات التوظيف.
+              </p>
+              <div class="cert-card-skills">
+                <span>CV Writing</span>
+                <span>Interviews</span>
+                <span>Career Readiness</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag" data-i18n="contact.tag"><i class="fa-solid fa-envelope-open-text"></i> تواصل واكتشف المزيد</span>
+          <h2 class="section-title" data-i18n="contact.title">تواصل معي مباشرة</h2>
+          <p class="section-subtitle" data-i18n="contact.sectionSubtitle">مستعدة للمساهمة في بيئات عمل احترافية ومشاريع نوعية</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-card-wrapper">
+          
+          <!-- Contact Left Details -->
+          <div class="contact-info-panel" data-tilt>
+            <h3 class="contact-lead-title" data-i18n="contact.subHeading">جاهزة للمساهمة في بيئات عمل احترافية ومشاريع هادفة</h3>
+            <p class="contact-lead-desc" data-i18n="contact.desc">
+              أرحب بفرص التدريب، والعمل في مجالات التوظيف، شؤون الموظفين، الرواتب، وإدارة المواهب. يسعدني التواصل المباشر عبر البريد الإلكتروني أو LinkedIn.
+            </p>
+
+            <div class="contact-channels-stack">
+              
+              <!-- LinkedIn Card -->
+              <a href="https://www.linkedin.com/in/rana-osama-elsorady-b3a39b318?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="contact-channel-btn linkedin-channel">
+                <div class="channel-icon-wrap">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div class="channel-texts">
+                  <span class="channel-tag">LinkedIn Profile</span>
+                  <span class="channel-val">rana-osama-elsorady</span>
+                </div>
+                <div class="channel-arrow">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+              </a>
+
+              <!-- Email Card -->
+              <div class="contact-channel-btn email-channel">
+                <div class="channel-icon-wrap">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="channel-texts">
+                  <span class="channel-tag" data-i18n="contact.emailLabel">البريد الإلكتروني</span>
+                  <a href="mailto:ranaelsorady@gmail.com" class="channel-val">ranaelsorady@gmail.com</a>
+                </div>
+                <button class="channel-copy-btn" id="copyEmailBtn" title="نسخ البريد الإلكتروني" aria-label="Copy Email">
+                  <i class="fa-regular fa-copy"></i>
+                  <span class="copy-feedback-tooltip" id="copyTooltip" data-i18n="contact.copied">تم النسخ!</span>
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Contact Right Form -->
+          <div class="contact-form-panel" data-tilt>
+            <div class="form-container-box">
+              <h3 class="form-header-title" data-i18n="contact.formTitle">إرسال رسالة مباشرة</h3>
+              
+              <form id="contactForm" onsubmit="event.preventDefault(); window.handleContactSubmit();">
+                <div class="form-field-group">
+                  <label for="senderName" data-i18n="contact.nameField">الاسم الكريم</label>
+                  <input type="text" id="senderName" class="form-control" required placeholder="أدخل اسمك الكريم">
+                </div>
+
+                <div class="form-field-group">
+                  <label for="senderEmail" data-i18n="contact.emailField">البريد الإلكتروني</label>
+                  <input type="email" id="senderEmail" class="form-control" required placeholder="example@company.com">
+                </div>
+
+                <div class="form-field-group">
+                  <label for="senderMessage" data-i18n="contact.msgField">الرسالة / الغرض من التواصل</label>
+                  <textarea id="senderMessage" class="form-control form-control-textarea" rows="4" required placeholder="اكتب تفاصيل الرسالة هنا..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block-submit">
+                  <i class="fa-solid fa-paper-plane"></i>
+                  <span data-i18n="contact.sendBtn">إرسال الرسالة عبر البريد</span>
+                </button>
+
+                <p class="form-disclaimer" data-i18n="contact.formNote">* سيتم فتح تطبيق البريد الإلكتروني لإرسال رسالتك مباشرة إلى ranaelsorady@gmail.com</p>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-main">
+    <div class="container footer-layout">
+      
+      <div class="footer-brand-side">
+        <div class="footer-logo">
+          <span class="logo-badge">RO</span>
+          <span class="footer-logo-title">RANA OSAMA</span>
+        </div>
+        <p class="footer-copyright-text" data-i18n="footer.copyright">© 2026 رنا أسامة الصردي | جميع الحقوق محفوظة</p>
+        <a href="https://www.facebook.com/share/1DTxw3pTGC/" target="_blank" rel="noopener noreferrer" class="footer-powered-by" data-i18n="footer.poweredBy"><i class="fa-solid fa-code"></i> Powered by Amir Adel</a>
+      </div>
+
+      <div class="footer-social-side">
+        <a href="https://www.linkedin.com/in/rana-osama-elsorady-b3a39b318" target="_blank" rel="noopener noreferrer" class="social-circle-btn" title="LinkedIn Profile">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:ranaelsorady@gmail.com" class="social-circle-btn" title="Email Direct">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating Scroll-to-Top Button -->
+  <button class="back-to-top-btn" id="backToTop" aria-label="Back to Top" title="الرجوع للأعلى">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- FULLSCREEN IMAGE LIGHTBOX MODAL -->
+  <div class="lightbox-modal" id="lightboxModal" aria-hidden="true" role="dialog">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-dialog">
+      <button class="lightbox-close-btn" id="lightboxCloseBtn" aria-label="Close Lightbox">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="lightbox-img-wrapper">
+        <img src="" alt="Full view" id="lightboxImg" class="lightbox-display-img">
+      </div>
+      <div class="lightbox-caption-bar">
+        <h4 id="lightboxTitle" class="lightbox-caption-title"></h4>
+        <p id="lightboxCaption" class="lightbox-caption-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Application Interaction & Motion Script -->
+  <script src="script.js"></script>
+</body>
+</html>
